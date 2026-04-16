@@ -1,0 +1,6 @@
+[
+  {
+    "key": "ctrl+alt+s",
+    "command": "C_Cpp.BuildAndDebugFile"
+  }
+]
