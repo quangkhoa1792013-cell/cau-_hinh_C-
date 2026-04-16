@@ -1,0 +1,10 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    // vi IDE ko nhan dien dc day la file ho tro ngon ngu j nen KQ la ko chay dc
+    // va se bi loi ".\1.3.3.txt: file not recognized: file format not recognized collect2.exe: error: ld returned 1 exit status error: ld returned 1 exit status"
+    cout << "Hello World" << endl;
+    return 0;
+}

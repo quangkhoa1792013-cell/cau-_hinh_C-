@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/TDM-GCC-64/include/**",
+                "C:/TDM-GCC-64/x86_64-w64-mingw32/include/**"
+            ],
+            "compilerPath": "C:/Program Files/LLVM/bin/clang++.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "windows-gcc-x64" 
+        }
+    ],
+    "version": 4
+}

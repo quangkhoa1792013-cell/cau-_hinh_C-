@@ -1,0 +1,30 @@
+{
+  "C++ Basic Structure": {
+    "prefix": "!cpp",
+    "body": [
+      "#include <bits/stdc++.h>",
+      "using namespace std;",
+      "",
+      "int main(){",
+      "\t$0",
+      "\treturn 0;",
+      "}"
+    ],
+    "description": "C++ basic main structure"
+  },
+  "Freopen input file": {
+    "prefix": "!infreopen",
+    "body": [
+      "freopen(\"${TM_FILENAME_BASE}.INP\", \"r\", stdin);"
+    ],
+    "description": "Tự động tạo freopen theo tên file hiện tại"
+  },
+
+  "Freopen output file": {
+    "prefix": "!outfreopen",
+    "body": [
+      "freopen(\"${TM_FILENAME_BASE}.OUT\", \"w\", stdout);"
+    ],
+    "description": "Tự động tạo freopen theo tên file hiện tại"
+  }
+}
