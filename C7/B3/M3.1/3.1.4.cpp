@@ -2,14 +2,20 @@
 using namespace std;
 
 int main(){
-    string s;
-    cin >> s;
-    set<char> a;
+    int n, x;
+    cin >> n >> x;
+    set<int> s;
 
-    for (char x : s){
-        a.insert(x);
+    for (int i = 0; i < n; i++){
+        int a;
+        cin >> a;
+        s.insert(a);
     }
-    cout << a.size();
-    
+
+    if (s.count(x) > 0){
+        cout << "YES";
+    }else{
+        cout << "NO";
+    }
     return 0;
 }
