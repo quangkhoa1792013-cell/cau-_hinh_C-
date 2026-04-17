@@ -50,7 +50,7 @@ for /f "tokens=1*" %%a in ('git --no-pager diff --name-status main origin/main')
   if "!st!"=="D" set "display=%R%[DA XOA]%W%"
   if "!st!"=="R" set "display=%B%[DOI TEN]%W%"
   if "!st!"=="C" set "display=%B%[SAO CHEP]%W%"
-  if "!st!"=="U" set "display=%R%[XUNG DOT]%W%"
+  if "!st!"=="U" set "display=%R%[CHUA QUAN LI]%W%"
   echo  !display! %%b
 )
 echo.
@@ -93,7 +93,7 @@ for /f "tokens=1,2*" %%a in ('git status --porcelain') do (
   if "!st!"=="D"  set "display=%R%[DA XOA]%W%"
   if "!st!"=="R"  set "display=%B%[DOI TEN]%W%"
   if "!st!"=="C"  set "display=%B%[SAO CHEP]%W%"
-  if "!st!"=="UU" set "display=%R%[XUNG DOT]%W%"
+  if "!st!"=="UU" set "display=%R%[CHUA QUAN LI]%W%"
   if "!st!"=="??" set "display=%C%[FILE LA]%W%"
   
   echo  !display! !file!
