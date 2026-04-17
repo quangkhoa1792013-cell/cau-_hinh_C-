@@ -2,8 +2,13 @@
 using namespace std;
 
 int main(){
+    int a, b;
     string s;
+    cin >> a >> b;
+    cin.ignore();
     getline(cin, s);
-    cout << s.substr(s.rfind(' ') + 1);
+
+    cout << s.substr(a, b);
+    
     return 0;
 }

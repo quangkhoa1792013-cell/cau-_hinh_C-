@@ -4,6 +4,10 @@ using namespace std;
 int main(){
     string s;
     getline(cin, s);
-    cout << s.substr(s.rfind(' ') + 1);
+
+    size_t pos = s.find("apple");
+
+    s.replace(pos, 5, "orange");
+    cout << s;
     return 0;
 }
