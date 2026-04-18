@@ -7,10 +7,22 @@ int main(){
 
     string s;
     cin >> s;
-
-    for (int i = 0; i < s.size(); i++){
-        if (!isdigit(s[i])) s[i] = ' ';
+    set<char> so;
+    
+    for (char &x : s){
+        if (!isdigit(x)){
+            x = ' ';
+        }
     }
     
+    stringstream ss(s);
+    int tam;
+
+    while (ss >> tam){
+        so.insert(tam);
+    }
+    
+    cout << so.size();
+
     return 0;
 }
