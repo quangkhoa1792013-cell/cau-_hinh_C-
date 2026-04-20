@@ -19,12 +19,20 @@
     ],
     "description": "Tự động tạo freopen theo tên file hiện tại"
   },
-
   "Freopen output file": {
     "prefix": "!outfreopen",
     "body": [
       "freopen(\"${TM_FILENAME_BASE}.OUT\", \"w\", stdout);"
     ],
     "description": "Tự động tạo freopen theo tên file hiện tại"
+  },
+  "Dynamic Context For": {
+    "prefix": "!for",
+    "body": [
+      "for (int ${1|i,j,y,a,b,c,d,k,s|} = 0; ${1} < ${2}; ${1}++) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Gõ !for, chọn biến rồi Tab để vào trong"
   }
 }
