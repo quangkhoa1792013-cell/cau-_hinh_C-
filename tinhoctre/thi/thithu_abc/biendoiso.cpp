@@ -12,7 +12,6 @@ int main(){
 
     for (char c = '0'; c <= '9'; c++) {
         s[s.size() - 1] = c;
-        stoll(s);
         if (s % 3 == 0) {
             cout << s;
             return 0;
