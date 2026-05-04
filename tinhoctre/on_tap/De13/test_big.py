@@ -9,4 +9,4 @@ def create_test(n, max_val, filename="SAME.INP"):
     print(f"Da tao xong file {filename} voi {n} phan tu.")
 
 # Chạy tạo test cực đại
-create_test(1000000, 1000000)
+create_test(100, 1000000)
