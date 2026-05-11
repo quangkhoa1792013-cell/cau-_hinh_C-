@@ -8,29 +8,23 @@ int main(){
     freopen("FAIL.INP", "r", stdin);
     freopen("FAIL.OUT", "w", stdout);
 
-    int n, k;
+    long long n, k;
     cin >> n >> k;
 
-    vector<int> a(n);
+    vector<long long> a(n);
 
     for (int i = 0; i < n; i++) {
         cin >> a[i];
     }
 
-    vector<int> tam;
+    long long max_f = -1;
 
     for (int x : a){
-        if (x < k){
-            tam.push_back(x);       
+        if (x < k && x > max_f){
+            max_f = x;
         }
     }
 
-    if (tam.size() == 0){
-        cout << -1;
-    }else{
-        auto it = max_element(tam.begin(), tam.end());
-        cout << *it;
-    }
-
+    cout << max_f;
     return 0;
 }

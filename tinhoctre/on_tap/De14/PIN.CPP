@@ -16,16 +16,11 @@ int main(){
     freopen("PIN.INP", "r", stdin);
     freopen("PIN.OUT", "w", stdout);
     
-    int x, y, n;
+    long long x, y, n;
     cin >> x >> y >> n;
 
-    int tam = x;
-
-    if (n > 500){
-        for (int i = 0; i < n - 500; i++){
-            tam += y;
-        }
-    }
+    long long vuot = max(0LL, n - 500);
+    long long tam = x + vuot * y;
 
     cout << tam;
     return 0;
