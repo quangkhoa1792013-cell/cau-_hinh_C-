@@ -2,8 +2,8 @@
 using namespace std;
 
 int main(){
-    de("BAI1.INP", "r", stdin);
-    de("BAI1.OUT", "w", stdout);
+    freopen("BAI1.INP", "r", stdin);
+    freopen("BAI1.OUT", "w", stdout);
     
     int n;
     cin >> n;

@@ -1,6 +1,7 @@
 {
   "editor.formatOnSave": false,
   // 1. Giữ IntelliSense của Microsoft để gợi ý code
+  "editor.inlayHints.enabled": "off",
   "C_Cpp.intelliSenseEngine": "default",
   "C_Cpp.intelliSenseEngineFallback": "disabled",
   // 2. Cấu hình Clangd chỉ để báo lỗi và hiện hints
