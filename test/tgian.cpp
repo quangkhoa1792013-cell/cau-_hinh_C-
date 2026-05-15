@@ -2,7 +2,6 @@
 using namespace std;
 
 int main(){
-    freopen("tgian.INP", "r", stdin);
 
     /*
 
@@ -19,7 +18,7 @@ int main(){
     int h, p;
     cin >> h >> p;
 
-    int tgtoida = 100;
+    int tgtoida = 135;
     int tonghp = h * 60 + p;
 
     tonghp += tgtoida;
